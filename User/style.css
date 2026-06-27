@@ -1,0 +1,63 @@
+:root {
+    --accent: #ff6b00;
+    --bg-color: #0a0a0a;
+}
+
+body {
+    margin: 0;
+    background: var(--bg-color);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(10,10,10,0.95);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.search-box {
+    background: rgba(255,255,255,0.1);
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+.main-container {
+    margin-top: 90px;
+    padding: 20px 50px;
+}

@@ -1,0 +1,140 @@
+/* ===== MOVIXO CINEMATIC PREMIUM LOGIN ===== */
+
+:root {
+    --primary: #ff3c38;
+    --primary-hover: #e12d2a;
+    --card-bg: rgba(20, 20, 25, 0.85);
+    --text-main: #ffffff;
+    --text-muted: #c5c5c5;
+}
+
+/* Full Background */
+.auth-container {
+    min-height: 100vh;
+    background: 
+        linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.6)),
+        url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main Card */
+.auth-box {
+    width: 460px;
+    padding: 50px 45px;
+    border-radius: 18px;
+    background: var(--card-bg);
+    backdrop-filter: blur(25px);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.8);
+    border: 1px solid rgba(255,255,255,0.08);
+    text-align: center;
+    animation: fadeUp 0.5s ease;
+}
+
+/* Logo Area (Optional if you add logo text) */
+.auth-box h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-main);
+}
+
+.auth-box p {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+/* Inputs */
+.auth-box input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.05);
+    color: white;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.auth-box input::placeholder {
+    color: #aaa;
+}
+
+.auth-box input:focus {
+    border-color: var(--primary);
+    background: rgba(255,255,255,0.08);
+    outline: none;
+}
+
+/* Button */
+.auth-btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background: var(--primary);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.auth-btn:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255,60,56,0.4);
+}
+
+/* Links */
+.auth-links {
+    margin-top: 22px;
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.auth-links a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+/* Error */
+.auth-error {
+    background: rgba(255, 60, 56, 0.15);
+    color: #ff6b6b;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    font-size: 13px;
+}
+
+/* Animation */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .auth-box {
+        width: 90%;
+        padding: 35px 25px;
+    }
+}
